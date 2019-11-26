@@ -91,10 +91,10 @@ public class mixed {
 			   driver.findElement(By.xpath("//*[@text='WiFi settings']")).click();
 			   
 			   WebDriverWait optionswait6 = new WebDriverWait(driver, 30);
-			   optionswait6.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@text='QA']")));
+			   optionswait6.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@text='Alatir QA']")));
 			   String lastText=    driver.findElement(By.xpath("//*[@text='QA Derpartment']")).getText();
 
-			   Assert.assertEquals("QA", lastText);
+			   Assert.assertEquals("Alatir QA", lastText);
 
 	
 	
