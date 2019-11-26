@@ -81,7 +81,7 @@ public class mixed {
 			  WebDriverWait optionswait4 = new WebDriverWait(driver, 30);
 			  optionswait4.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@text='WiFi settings']")));
 			  
-			  driver.findElement(By.id("android:id/edit")).sendKeys("QA Derpartment"); 
+			  driver.findElement(By.id("android:id/edit")).sendKeys("Muhammad Haris"); 
 			  driver.findElement(By.xpath("//*[@text='OK']")).click(); 
 			  
 			   //assertion
@@ -95,7 +95,7 @@ public class mixed {
 			   optionswait6.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@text='QA Department']")));
 			   String lastText=    driver.findElement(By.xpath("//*[@text='QA Derpartment']")).getText();
 
-			   Assert.assertEquals("Abbas jani Department", lastText);
+			   Assert.assertEquals("Muhammad Haris", lastText);
 
 	
 	
